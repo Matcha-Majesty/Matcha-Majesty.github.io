@@ -156,7 +156,6 @@ ul.nav-links > li > a{
   margin-top: 4rem;
 
   display: grid;
-  grid-template-columns: auto auto auto auto;
 }
 
 
@@ -372,6 +371,9 @@ div.filter div.filter-grid div.filter-grid-flavor div.flavor div.checkbox input{
     line-height: 2;
   }
 
+  .footer{
+    grid-template-columns: auto auto auto auto;
+  }
   .footer-logo{
     padding: 2rem 0 2rem 0;
   }
