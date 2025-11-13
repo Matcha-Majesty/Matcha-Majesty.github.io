@@ -442,5 +442,6 @@ div.filter div.filter-grid div.filter-grid-flavor div.flavor div.checkbox input{
   }
   .review-container > .review-img{
     width: 100%;
+    max-height: 400px;
   }
 }
