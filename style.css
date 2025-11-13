@@ -348,7 +348,7 @@ div.filter div.filter-grid div.filter-grid-flavor div.flavor div.checkbox input{
 
 .img-container{
   margin-top: 2rem;
-  display: flex;
+  display: block;
   justify-content: space-between;
 }
 .body-text > .img-container > img{
@@ -425,7 +425,7 @@ div.filter div.filter-grid div.filter-grid-flavor div.flavor div.checkbox input{
     height: 150px;
   }
   .review-container{
-    display: flex;
+    display: block;
     margin: 1rem 0 1rem 0;
   }
   .location-btns > button{
