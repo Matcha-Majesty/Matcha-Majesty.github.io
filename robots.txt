@@ -1,1 +1,1 @@
-Sitemap: https://MatchaMajesty.github.io/sitemap.xml
+Sitemap: https://Matcha-Majesty.github.io/sitemap.xml
