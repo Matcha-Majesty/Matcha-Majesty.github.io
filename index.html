@@ -129,6 +129,18 @@
     
     var map = L.map('map').setView([40.785091, -73.968285], 13); // coordinates set to Central Park South
 
+    /*
+    (async function generateMarkers(){
+    let reviewObjs = await fetch('https://matcha-majesty.github.io/reviewData.json');
+    const result = await reviewObjs.json();
+    console.log(result);
+        result.reviewData.forEach((value, index) => {
+            console.log(value.store);
+
+        });
+    })();
+    */
+
     // MARKERS //
     var marker = L.marker([40.804732, -73.951249]).addTo(map);
     marker.bindPopup('<b>The Monkey Cup</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$5.75 🍰<br><a href="reviews/TheMonkeyCup_review.html">Full Review</a>').openPopup();
@@ -194,6 +206,9 @@
 
     var marker = L.marker([40.765098, -73.987358]).addTo(map);
     marker.bindPopup('<b>Thē Soirēe</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="9px" height="16px"><use href="#svg-star"></use></svg><br>$7.75 - $8.75<a href="reviews/TheSoire_review.html">Full Review</a>').openPopup();
+
+    var marker = L.marker([40.799000, -73.941040]).addTo(map);
+    marker.bindPopup('<b>Super Nice Coffee and Bakery</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$6.00 S (8oz)<a href="reviews/SuperNiceCoffeeAndBakery_review.html">Full Review</a>').openPopup();
 
 
 
