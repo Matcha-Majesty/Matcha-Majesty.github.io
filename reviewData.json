@@ -231,5 +231,18 @@
     "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"12px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
     "long": "40.765098",
     "lat": "-73.987358"
+},
+{
+    "store": "Super Nice Coffee and Bakery",
+    "stars": "3s",
+    "price": "$$",
+    "flavor": "bitter",
+    "reviewPreview": "Very bitter and a bit clumpy.",
+    "imgSrc": "assets2/Super_Nice_Coffee_and_Bakery2.jpg",
+    "altText": "A green matcha latte in a small plastic cup with a logo sticker of a cartoon pig and text 'SUPER NICE COFFEE AND BAKERY'.",
+    "reviewLink": "reviews/SuperNiceCoffeeAndBakery_review.html",
+    "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
+    "long": "40.799000",
+    "lat": "-73.941040"
 }]
 }
