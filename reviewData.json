@@ -104,21 +104,6 @@
     "lat": "-73.988701"
 },
 {
-    "store": "Flander's Bagels",
-    "stars": "1s",
-    "price": "$$",
-    "flavor": "sweet",
-    "amount": "$5.18 🍰",
-    "size": "M (only size offered)",
-    "reviewPreview": "Not a latte... This is a saccharine milkshake.",
-    "imgSrc": "assets2/Flagels3.jpg",
-    "altText": "A very pale green, thick matcha with a sugary foam on its surface.",
-    "reviewLink": "reviews/Flagels_review.html",
-    "starsSVG": "<svg width=\"12px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
-    "long": "40.831252",
-    "lat": "-74.708947"
-},
-{
     "store": "Stuey's",
     "stars": "1s",
     "price": "$$",
@@ -283,4 +268,5 @@
     "long": "40.799000",
     "lat": "-73.941040"
 }]
+
 }
