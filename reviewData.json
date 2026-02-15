@@ -75,7 +75,7 @@
 },
 {
     "store": "Crest Coffee Company",
-    "stars": "3s",
+    "stars": "4s",
     "price": "$$",
     "flavor": "sweet",
     "amount": "$5.50 🍰",
@@ -102,6 +102,21 @@
     "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
     "long": "40.744621",
     "lat": "-73.988701"
+},
+{
+    "store": "Flander's Bagels",
+    "stars": "1s",
+    "price": "$$",
+    "flavor": "sweet",
+    "amount": "$5.18 🍰",
+    "size": "M (only size offered)",
+    "reviewPreview": "Not a latte... This is a saccharine milkshake.",
+    "imgSrc": "assets2/Flagels3.jpg",
+    "altText": "A very pale green, thick matcha with a sugary foam on its surface.",
+    "reviewLink": "reviews/Flagels_review.html",
+    "starsSVG": "<svg width=\"12px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
+    "long": "40.831252",
+    "lat": "-74.708947"
 },
 {
     "store": "Stuey's",
@@ -267,6 +282,50 @@
     "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
     "long": "40.799000",
     "lat": "-73.941040"
+},
+{
+    "store": "Mori Coffee",
+    "stars": "4s",
+    "price": "$$",
+    "flavor": "umami",
+    "amount": "$5.45",
+    "size": "S",
+    "reviewPreview": "A light, refreshing, umami taste.",
+    "imgSrc": "assets2/Mori1.jpg",
+    "altText": "",
+    "reviewLink": "reviews/Mori_review.html",
+    "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
+    "long": "40.742063",
+    "lat": "-73.978220"
+},
+{
+    "store": "Matto",
+    "stars": "3s",
+    "price": "$",
+    "flavor": "mild",
+    "amount": "$3.81",
+    "size": "S",
+    "reviewPreview": "Refreshing and light.",
+    "imgSrc": "assets2/Matto.jpg",
+    "altText": "",
+    "reviewLink": "reviews/Matto_review.html",
+    "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"12px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
+    "long": "40.785134",
+    "lat": "-73.951760"
+},
+{
+    "store": "Marias",
+    "stars": "4s",
+    "price": "$",
+    "flavor": "sweet",
+    "amount": "$4.20",
+    "size": "S",
+    "reviewPreview": "Sweet with a smooth, creamy texture.",
+    "imgSrc": "assets2/Marias.jpg",
+    "altText": "",
+    "reviewLink": "reviews/Marias_review.html",
+    "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"12px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
+    "long": "40.783544",
+    "lat": "-74.695709"
 }]
-
 }
