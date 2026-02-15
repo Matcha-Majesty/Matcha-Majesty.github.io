@@ -28,6 +28,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
+    <script type="text/javascript" src="loadHeaderFooter.js"></script>
+    <!--
+    <script>
+        function addActiveClass() {
+            let element = body.getElementByID("nav-home");
+            element.classList.add("active");
+        }
+        addActiveClass();
+    </script>
+    -->
+
     <body>
         <div class="hero-container">
             <div class="hero-image">
@@ -56,6 +67,12 @@
                 <p><i><b>Important Note:</b> My reviews are based on the natural matcha flavor in latte form. This means I don't buy lattes with lavendar, strawberry, vanilla or any other kind of sweetener. I order the standard matcha latte which sometimes comes already sweetened with agave or honey, but I take the unsweetened option if they inform me that they normally add sweetener by default. The point is to review the flavor of the MATCHA, not the sweetener.</i></p>
                 <p><i>Also, I am not a matcha expert! I'm just a matcha lover sharing my matcha related thoughts and opinions on my own humble corner of the internet. If you disagree with my rating, that's fine, just be respectful! ♡</i></p>
             </div>
+
+            <h3 style="text-align: center; padding: 2rem 0 2rem 0;">Search reviews by state.</h3>
+            <div class="location-btns">
+                <button onclick="changeLocation('ny')">New York City</button>
+                <button onclick="changeLocation('nj')">New Jersey</button>
+            </div>
             
             <div class="map-key">
                 <div class="map-key-left">
@@ -72,12 +89,7 @@
                     <p>Matchas with a sweet flavor are marked with a 🍰, otherwise assume an umami flavor.</p>
                 </div>
             </div>
-            
-            <h3 style="text-align: center; padding: 2rem 0 2rem 0;">Search reviews by state.</h3>
-            <div class="location-btns">
-                <button onclick="changeLocation('ny')">New York City</button>
-                <button onclick="changeLocation('nj')">New Jersey</button>
-            </div>
+        
         </div>
 
         <div id="map"></div>
@@ -106,31 +118,20 @@
     
 </html>
 
-<script type="text/javascript" src="../loadHeaderFooter.js"></script>
+<script type="text/javascript" src="loadHeaderFooter.js"></script>
 
 
 <script>
     
     var map = L.map('map').setView([40.785091, -73.968285], 13); // coordinates set to Central Park South
 
-    /*
-    (async function generateMarkers(){
-    let reviewObjs = await fetch('https://matcha-majesty.github.io/reviewData.json');
-    const result = await reviewObjs.json();
-    console.log(result);
-        result.reviewData.forEach((value, index) => {
-            console.log(value.store);
-
-        });
-    })();
-    */
-
     // MARKERS //
+    /**/
     var marker = L.marker([40.804732, -73.951249]).addTo(map);
     marker.bindPopup('<b>The Monkey Cup</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$5.75 🍰<br><a href="reviews/TheMonkeyCup_review.html">Full Review</a>').openPopup();
 
     var marker = L.marker([40.789854, -73.948267]).addTo(map);
-    marker.bindPopup('<b>Frenchy</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$5.50<a href="reviews/Frenchy_review.html">Full Review</a>').openPopup();
+    marker.bindPopup('<b>Frenchy</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$5.50 S<a href="reviews/Frenchy_review.html">Full Review</a>').openPopup();
 
     var marker = L.marker([40.787010, -74.780380]).addTo(map);
     marker.bindPopup('<b>The Coffee Potter</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$5.50 🍰<a href="reviews/CoffeePotter_review.html">Full Review</a>').openPopup();
@@ -144,17 +145,16 @@
     var marker = L.marker([40.744621, -73.988701]).addTo(map);
     marker.bindPopup('<b>Cha Cha Matcha</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$6.00<a href="reviews/ChaChaMatcha_review.html">Full Review</a>').openPopup();
 
+    
+    //var marker = L.marker([40.716679, -73.989550]).addTo(map);
+    //marker.bindPopup('<b>Dunkin Donuts</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$$').openPopup();
 
-    /*
-    var marker = L.marker([40.716679, -73.989550]).addTo(map);
-    marker.bindPopup('<b>Dunkin Donuts</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$$').openPopup();
+    //var marker = L.marker([40.719743, -73.999127]).addTo(map);
+    //marker.bindPopup('<b>Starbucks</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$$').openPopup();
 
-    var marker = L.marker([40.719743, -73.999127]).addTo(map);
-    marker.bindPopup('<b>Starbucks</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$$').openPopup();
-
-    var marker = L.marker([40.803414, -74.019102]).addTo(map);
-    marker.bindPopup('<b>Wawa</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="9px" height="16px"><use href="#svg-star"></use></svg><br>$$').openPopup();
-    */
+    //var marker = L.marker([40.803414, -74.019102]).addTo(map);
+    //marker.bindPopup('<b>Wawa</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="9px" height="16px"><use href="#svg-star"></use></svg><br>$$').openPopup();
+    
    
     var marker = L.marker([38.978187, -74.822405]).addTo(map);
     marker.bindPopup('<b>Stuey\'s</b><br><svg width="5px" height="16px"><use href="#svg-star"></use></svg><br>$5.51 🍰<a href="reviews/Stueys_review.html">Full Review</a>').openPopup();
@@ -192,7 +192,42 @@
     var marker = L.marker([40.799000, -73.941040]).addTo(map);
     marker.bindPopup('<b>Super Nice Coffee and Bakery</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$6.00 S (8oz)<a href="reviews/SuperNiceCoffeeAndBakery_review.html">Full Review</a>').openPopup();
 
+    var marker = L.marker([40.742063, -73.978220]).addTo(map);
+    marker.bindPopup('<b>Mori Coffee</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$5.45 S<a href="reviews/Mori_review.html">Full Review</a>').openPopup();
 
+    var marker = L.marker([40.785134, -73.978220]).addTo(map);
+    marker.bindPopup('<b>Matto</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="9px" height="16px"><use href="#svg-star"></use></svg><br>$3.81 S<a href="reviews/Matto_review.html">Full Review</a>').openPopup();
+
+    var marker = L.marker([40.785134, -73.951760]).addTo(map);
+    marker.bindPopup('<b>El Montes Coffee Roasters</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><br>$5.25 S<a href="reviews/ElMonte_review.html">Full Review</a>').openPopup();
+
+    var marker = L.marker([40.783544, -74.695709]).addTo(map);
+    marker.bindPopup('<b>Marias</b><br><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="16px" height="16px"><use href="#svg-star"></use></svg><svg width="8px" height="16px"><use href="#svg-star"></use></svg><br>$4.20 S<a href="reviews/Marias_review.html">Full Review</a>').openPopup();
+
+
+    /**/
+
+
+    /*
+    (async function generateReviews(){
+        let reviewObjs = await fetch('https://matcha-majesty.github.io/reviewData.json');
+        const result = await reviewObjs.json();
+        //console.log(result);
+
+        result.reviewData.forEach((value, index) => {
+            console.log(value.store);
+            var marker = `L.marker([${value.long}, ${value.lat}]).addTo(map)`;
+            marker.bindPopup(`<b>${value.store}</b><br>${value.stars}<br>${value.amount} ${value.size}<a href="${value.reviewLink}">Full Review</a>`).openPopup();
+            //console.log(`marker.bindPopup(<b>${value.store}</b><br>${value.starsSVG}<br>${value.amount} ${value.size}<a href="${value.reviewLink}">Full Review</a>).openPopup()`);
+
+            /*
+            var marker = `L.marker([${value.long}, ${value.lat}]).addTo(map)`;
+            var popup = L.popup().setContent(`<b>${value.store}</b><br>${value.stars}<br>${value.amount} ${value.size}<a href="${value.reviewLink}">Full Review</a>`);
+            marker.bindPopup(popup).openPopup();
+            *//*
+        });
+    })();
+    */
 
 
 
@@ -203,8 +238,4 @@
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 </script>
-
-
-
-
 
