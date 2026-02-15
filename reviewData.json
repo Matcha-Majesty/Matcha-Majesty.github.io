@@ -321,7 +321,7 @@
     "amount": "$4.20",
     "size": "S",
     "reviewPreview": "Sweet with a smooth, creamy texture.",
-    "imgSrc": "assets2/Marias.jpg",
+    "imgSrc": "assets2/Marias1.jpg",
     "altText": "",
     "reviewLink": "reviews/Marias_review.html",
     "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"12px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
