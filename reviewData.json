@@ -135,7 +135,7 @@
 },
 {
     "store": "White Noise",
-    "stars": "3s",
+    "stars": "4s",
     "price": "$$",
     "flavor": "sweet",
     "amount": "$6.00 🍰",
@@ -144,13 +144,13 @@
     "imgSrc": "assets2/WhiteNoise1.jpg",
     "altText": "A lighter green matcha color. The bottom of the cup is a bit darker green where the matcha has settled. There's a lot of ice.",
     "reviewLink": "reviews/WhiteNoise_review.html",
-    "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
+    "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
     "long": "40.770149",
     "lat": "-73.991928"
 },
 {
     "store": "Yanni's Coffee",
-    "stars": "2s",
+    "stars": "3s",
     "price": "$$$",
     "flavor": "mild",
     "amount": "$7.62",
@@ -159,7 +159,7 @@
     "imgSrc": "assets2/Yanni_s1.jpg",
     "altText": "A smooth green matcha with ice.",
     "reviewLink": "reviews/Yannis_review.html",
-    "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"12px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
+    "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
     "long": "40.739793",
     "lat": "-73.999015"
 },
@@ -225,7 +225,7 @@
 },
 {
     "store": "Setsugekka",
-    "stars": "3s",
+    "stars": "4s",
     "price": "$$$",
     "flavor": "nutty umami",
     "amount": "$10.25",
@@ -234,7 +234,7 @@
     "imgSrc": "assets2/Setsugekka.jpg",
     "altText": "A deep green, but slightly cloudy, matcha. The top of the drink is slightly frothy.",
     "reviewLink": "reviews/Setsugekka_review.html",
-    "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"12px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
+    "starsSVG": "<svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg><svg width=\"24px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
     "long": "40.727234",
     "lat": "-73.986649"
 },
@@ -313,5 +313,4 @@
     "long": "40.783544",
     "lat": "-74.695709"
 }]
-
 }
