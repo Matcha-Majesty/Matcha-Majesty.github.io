@@ -104,21 +104,6 @@
     "lat": "-73.988701"
 },
 {
-    "store": "Stuey's",
-    "stars": "1s",
-    "price": "$$",
-    "flavor": "sweet",
-    "amount": "$5.51 🍰",
-    "size": "S",
-    "reviewPreview": "This is a vanilla ice cream milkshake, not a matcha latte...",
-    "imgSrc": "assets2/Stuey_s1.jpg",
-    "altText": "A very pale green matcha.",
-    "reviewLink": "reviews/Stueys_review.html",
-    "starsSVG": "<svg width=\"12px\" height=\"24px\"><use href=\"#svg-star\"></use></svg>",
-    "long": "38.978187",
-    "lat": "-74.822405"
-},
-{
     "store": "Cream & Sugar",
     "stars": "4s",
     "price": "$",
